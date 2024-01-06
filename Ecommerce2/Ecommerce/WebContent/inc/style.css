@@ -1,0 +1,122 @@
+/* Réinitialisation des styles de base */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+}
+
+/* Styles pour le conteneur principal */
+body {
+	background-color: #f2f2f2; /* Couleur de fond légère */
+}
+
+/* Styles pour une div générique avec fond sombre et espacement intérieur */
+div {
+	background-color: #4CAF50; /* Couleur verte */
+	padding: 10px;
+	text-align: center; /* Centrage du texte */
+}
+.div2 {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Styles pour une liste non ordonnée (ul) utilisée comme barre de navigation */
+nav ul {
+    list-style: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour les liens (a) à l'intérieur de la barre de navigation */
+nav ul li {
+    display: inline-block; /* Affiche les éléments de liste en ligne (côte à côte) */
+    margin-right: 10px; /* Espacement entre les éléments de liste */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime la soulignement des liens */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 10px 20px; /* Espacement intérieur des liens */
+    display: inline-block;
+    background-color: #227733; /* Couleur de fond des liens */
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Ajoute une transition de couleur de fond lors du survol */
+}
+
+/* Effet de survol pour les liens de la barre de navigation */
+nav ul li a:hover {
+    background-color: #45a049; /* Changement de couleur de fond au survol */
+}
+
+
+
+/* Styles pour le formulaire */
+form {
+	max-width: 900px; /* Largeur maximale du formulaire */
+	margin: 0 auto; /* Centrer le formulaire sur la page */
+	padding: 20px;
+	background-color: #fff; /* Fond blanc du formulaire */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+}
+
+/* Styles pour le champset (fieldset) */
+fieldset {
+	border: 1px solid #ccc; /* Bordure légère */
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+/* Styles pour la légende du champset */
+legend {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Styles pour les étiquettes (label) */
+label {
+	display: block; /* Afficher chaque étiquette sur une ligne */
+	margin-bottom: 5px;
+}
+
+/* Styles pour les champs de saisie (input) */
+input {
+	width: 100%; /* Remplir la largeur du conteneur parent */
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur et la hauteur */
+}
+  select {
+        padding: 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+/* Styles pour les boutons */
+input[type="submit"], button {
+	background-color: #4CAF50; /* Couleur de fond verte */
+	color: #fff; /* Texte blanc */
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button {
+	margin-left: 10px; /* Espacement entre les boutons */
+	background-color: #ccc; /* Couleur de fond grise pour le bouton de réinitialisation */
+}
+
+/* Styles pour les liens dans le formulaire */
+a {
+	color: #4CAF50; /* Couleur du lien verte */
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline; /* Soulignement au survol */
+}
