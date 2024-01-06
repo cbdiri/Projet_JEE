@@ -1,0 +1,137 @@
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			
+			String action = request.getParameter("action");
+	
+			Connection connection = DAO.getConnection();
+			
+			/*if (action.equals("AjouterCategorie")) {
+					
+					String name = request.getParameter("name");
+				   
+					String sql = "INSERT INTO Categorie (name) VALUES (?) ";
+				  
+			        try (PreparedStatement statement = connection.prepareStatement(sql);) {
+	
+				          statement.setString(1, name);
+				          statement.executeUpdate();
+				    				    	
+			           } catch (SQLException e) {
+						
+						e.printStackTrace();
+					}
+			        
+			     
+			        request.setAttribute("Message", "Catégorie Ajoué aavec succès ");
+			        doGet(request, response);
+			 		//this.getServletContext().getRequestDispatcher("/Admin/Articles.jsp").forward(request, response);
+	
+			    } */ if (action.equals("AjouterArticle")) {
+	
+				//	String name = request.getParameter("name");
+				//	double prix = Double.parseDouble(request.getParameter("prix"));
+				//	String path_photo = request.getParameter("path_photo");
+					//int categorie_id = Integer.parseInt(request.getParameter("categorie_id"));
+				
+					 InputStream photoInputStream = (InputStream) request.getPart("photo").getInputStream();
+
+				        // Récupération du nom de la photo
+				      String nomPhoto = request.getPart("photo").getName();
+
+				      //  Récupération du chemin de la photo
+				       String cheminPhoto = request.getServletContext().getRealPath("/images/" + nomPhoto);
+
+				        
+				        System.out.println(nomPhoto+""+cheminPhoto);
+					
+					/*String sql = "INSERT INTO Produit (name,prix,path_photo,categorie_id) VALUES (?,?,?,?) ";
+					   try (PreparedStatement statement = connection.prepareStatement(sql);) {
+							
+					          statement.setString(1, name);
+					          statement.setDouble(2, prix);
+					          statement.setString(3, path_photo);
+					          statement.setInt(4, categorie_id);
+					          
+					          statement.executeUpdate();
+					    				    	
+				           } catch (SQLException e) {
+							
+							e.printStackTrace();
+						}*/
+				        
+
+			        //request.setAttribute("Message", "Produit Ajoué aavec succès ");
+			        //doGet(request, response);
+			    	
+					
+			    }
+					
+	
+		}protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			
+			String action = request.getParameter("action");
+	
+			Connection connection = DAO.getConnection();
+			
+			/*if (action.equals("AjouterCategorie")) {
+					
+					String name = request.getParameter("name");
+				   
+					String sql = "INSERT INTO Categorie (name) VALUES (?) ";
+				  
+			        try (PreparedStatement statement = connection.prepareStatement(sql);) {
+	
+				          statement.setString(1, name);
+				          statement.executeUpdate();
+				    				    	
+			           } catch (SQLException e) {
+						
+						e.printStackTrace();
+					}
+			        
+			     
+			        request.setAttribute("Message", "Catégorie Ajoué aavec succès ");
+			        doGet(request, response);
+			 		//this.getServletContext().getRequestDispatcher("/Admin/Articles.jsp").forward(request, response);
+	
+			    } */ if (action.equals("AjouterArticle")) {
+	
+				//	String name = request.getParameter("name");
+				//	double prix = Double.parseDouble(request.getParameter("prix"));
+				//	String path_photo = request.getParameter("path_photo");
+					//int categorie_id = Integer.parseInt(request.getParameter("categorie_id"));
+				
+					 InputStream photoInputStream = (InputStream) request.getPart("photo").getInputStream();
+
+				        // Récupération du nom de la photo
+				      String nomPhoto = request.getPart("photo").getName();
+
+				      //  Récupération du chemin de la photo
+				       String cheminPhoto = request.getServletContext().getRealPath("/images/" + nomPhoto);
+
+				        
+				        System.out.println(nomPhoto+""+cheminPhoto);
+					
+					/*String sql = "INSERT INTO Produit (name,prix,path_photo,categorie_id) VALUES (?,?,?,?) ";
+					   try (PreparedStatement statement = connection.prepareStatement(sql);) {
+							
+					          statement.setString(1, name);
+					          statement.setDouble(2, prix);
+					          statement.setString(3, path_photo);
+					          statement.setInt(4, categorie_id);
+					          
+					          statement.executeUpdate();
+					    				    	
+				           } catch (SQLException e) {
+							
+							e.printStackTrace();
+						}*/
+				        
+
+			        //request.setAttribute("Message", "Produit Ajoué aavec succès ");
+			        //doGet(request, response);
+			    	
+					
+			    }
+					
+	
+		}
